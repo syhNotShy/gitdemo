@@ -39,3 +39,31 @@ $ git reset --hard HEAD^
 $ git reset --hard HEAD^^
 $ git reset --hard HEAD~5
 ------------------------------------------------
+$ git clone git@github.com:junit-team/junit.git
+$ git clone https://github.com/junit-team/junit.git
+------------------------------------------------
+$ git remote add {origin} {git@github.com:yourName/yourRepo.git}
+$ git push <remote> <branch>
+
+------------------------------------------------
+$ git pull <remote> <branch> # fetches the code and merges it into 
+                             # your working directory
+$ git fetch <remote> <branch> # fetches the code but does not merge
+                              # it into your working directory
+
+$ git pull --tag <remote> <branch> # same as above but fetch tags as well
+$ git fetch --tag <remote> <branch> # you get the idea
+------------------------------------------------
+# create a new branch
+$ git branch <branch-name>
+# to see a list of all branches in the cureent repoitory 
+$ git branch
+# if you want to switch to another branch you can use
+$ git checkout <branch-name>
+# to create a new branch and switch to it in one step
+$ git checkout -b <branch-name>
+# to delete a branch:
+$ git branch -d <branch-name>
+# to create a branch with the changes from the current branch,do :
+$ git stash
+$ git stash branch <branch-name>
